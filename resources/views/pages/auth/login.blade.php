@@ -20,7 +20,7 @@
             <div class="card-body p-3 p-md-4 p-xl-5">
               <form action="">
                 <div class="text-center mb-4">
-                  <img src="{{ asset('images/logomini.jpg') }}" alt="Politeknik Sawunggalih Aji Logo" class="img-fluid" style="width: 30%; height: auto;">
+                  <img src="{{ asset('images/logoMini.png') }}" alt="Politeknik Sawunggalih Aji Logo" class="img-fluid" style="width: 30%; height: auto;">
                 </div>
                 <div class="row gy-3">
                   <div class="col-12">

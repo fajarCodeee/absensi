@@ -25,7 +25,7 @@
     <!-- inject:css -->
     <link rel="stylesheet" href={{ asset('css/style.css') }}>
     <!-- endinject -->
-    <link rel="shortcut icon" href={{ asset('images/favicon.png') }} />
+    <link rel="shortcut icon" href="{{ asset("images/logoMini.png") }}" />
     <style>
         select.form-control {
         color: black !important;
