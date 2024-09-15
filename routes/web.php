@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get("/auth/login",function(){
+    return view("pages.auth.login");
+});
 Route::get('/', function () {
     return redirect("/dashboard");
 });
