@@ -7,7 +7,8 @@
                 <div class="col-lg-12 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambahModal">
+                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#tambahModal">
                                 <span class="mdi mdi-plus"></span> Tambah
                             </button>
                             <div class="table-responsive">
@@ -109,31 +110,34 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal Bootstrap untuk Tambah Data -->
-        <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="tambahModalLabel">Tambah Data Prodi</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="tambahForm">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="kodeProdi" class="form-label">Kode Kelas</label>
-                                <input type="text" class="form-control" id="kodeProdi" name="kode" required placeholder="Kode prodi">
-                            </div>
-                            <div class="mb-3">
-                                <label for="namaProdi" class="form-label">Nama Kelas</label>
-                                <input type="text" class="form-control" id="namaProdi" name="nama" required placeholder="Nama prodi">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-sm">
-                                <span class="mdi mdi-content-save"></span> Simpan</button>
-                        </form>
-                    </div>
+    <!-- Modal Bootstrap untuk Tambah Data -->
+    <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tambahModalLabel">Tambah Data Prodi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="tambahForm">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="kodeProdi" class="form-label">Kode Kelas</label>
+                            <input type="text" class="form-control" id="kodeProdi" name="kode" required
+                                placeholder="Kode prodi">
+                        </div>
+                        <div class="mb-3">
+                            <label for="namaProdi" class="form-label">Nama Kelas</label>
+                            <input type="text" class="form-control" id="namaProdi" name="nama" required
+                                placeholder="Nama prodi">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            <span class="mdi mdi-content-save"></span> Simpan</button>
+                    </form>
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection

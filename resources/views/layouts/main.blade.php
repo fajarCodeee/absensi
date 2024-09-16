@@ -45,7 +45,6 @@
             <!-- partial:partials/_sidebar.html -->
             @include('partials._sidebar')
             @yield('container')
-            @include('partials._footer')
         </div>
         <!-- page-body-wrapper ends -->
     </div>

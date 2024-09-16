@@ -52,6 +52,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <!-- Modal Bootstrap untuk Tambah Data -->
         <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">

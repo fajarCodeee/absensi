@@ -70,50 +70,51 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal Bootstrap untuk Tambah Data -->
-        <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="tambahModalLabel">Tambah Data Mata Kuliah</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="tambahForm">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="kode" class="form-label">Kode Mata kuliah</label>
-                                <input type="text" class="form-control" id="kode" name="kode" required
-                                    placeholder="Kode mata kuliah">
-                            </div>
-                            <div class="mb-3">
-                                <label for="namaKelas" class="form-label">Nama Mata kuliah</label>
-                                <input type="text" class="form-control" id="namaKelas" name="nama" required
-                                    placeholder="Nama mata kuliah">
-                            </div>
-                            <div class="mb-3">
-                                <label for="semester" class="form-label">Semester</label>
-                                <select class="form-control" id="semester">
-                                    <option selected>--Semester--<x/option>
-                                    <option>Semester 1<x/option>
-                                    <option>Semester 3</option>
-                                    <option>Semester 5</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="sks" class="form-label">Gender</label>
-                                <select class="form-control" id="sks">
-                                    <option selected>--SKS--<x/option>
-                                    <option>2<x/option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary">
-                                <span class="mdi mdi-content-save"></span> Simpan</button>
-                        </form>
-                    </div>
+    <!-- Modal Bootstrap untuk Tambah Data -->
+    <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tambahModalLabel">Tambah Data Mata Kuliah</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="tambahForm">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="kode" class="form-label">Kode Mata kuliah</label>
+                            <input type="text" class="form-control" id="kode" name="kode" required
+                                placeholder="Kode mata kuliah">
+                        </div>
+                        <div class="mb-3">
+                            <label for="namaKelas" class="form-label">Nama Mata kuliah</label>
+                            <input type="text" class="form-control" id="namaKelas" name="nama" required
+                                placeholder="Nama mata kuliah">
+                        </div>
+                        <div class="mb-3">
+                            <label for="semester" class="form-label">Semester</label>
+                            <select class="form-control" id="semester">
+                                <option selected>--Semester--<x /option>
+                                <option>Semester 1<x /option>
+                                <option>Semester 3</option>
+                                <option>Semester 5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sks" class="form-label">Gender</label>
+                            <select class="form-control" id="sks">
+                                <option selected>--SKS--<x /option>
+                                <option>2<x /option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="mdi mdi-content-save"></span> Simpan</button>
+                    </form>
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection

@@ -32,8 +32,7 @@
                                             <td><img src="{{ asset('/images/faces/face1.jpg') }}" alt=""></td>
                                             <td>
                                                 <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#editModal" 
-                                                    onclick="editData()">
+                                                    data-bs-target="#editModal" onclick="editData()">
                                                     <span class="mdi mdi-pencil"></span> Edit
                                                 </button>
                                                 <form action="/delete/1" method="POST" style="display:inline;">
@@ -52,77 +51,79 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal Bootstrap untuk Tambah Data -->
-        <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="tambahModalLabel">Tambah Direktur</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="tambahForm">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="nip" class="form-label">NIP/NUPTK</label>
-                                <input type="number" class="form-control" id="nip" required placeholder="NIP/NUPTK">
-                            </div>
-                            <div class="mb-3">
-                                <label for="namaDirektur" class="form-label">Nama Direktur</label>
-                                <input type="text" class="form-control" id="namaDirektur" required
-                                    placeholder="Nama direktur">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="email" required placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="gambar" class="form-label">Gambar</label>
-                                <input type="file" class="form-control" id="gambar" required placeholder="Gambar">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-sm">
-                                <span class="mdi mdi-content-save"></span> Simpan</button>
-                        </form>
-                    </div>
+    <!-- Modal Bootstrap untuk Tambah Data -->
+    <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tambahModalLabel">Tambah Direktur</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="tambahForm">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="nip" class="form-label">NIP/NUPTK</label>
+                            <input type="number" class="form-control" id="nip" required placeholder="NIP/NUPTK">
+                        </div>
+                        <div class="mb-3">
+                            <label for="namaDirektur" class="form-label">Nama Direktur</label>
+                            <input type="text" class="form-control" id="namaDirektur" required
+                                placeholder="Nama direktur">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" required placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="gambar" class="form-label">Gambar</label>
+                            <input type="file" class="form-control" id="gambar" required placeholder="Gambar">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            <span class="mdi mdi-content-save"></span> Simpan</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal Bootstrap untuk Edit Data -->
-        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="editModalLabel">Edit Direktur</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="editForm">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="nip" class="form-label">NIP/NUPTK</label>
-                                <input type="number" class="form-control" id="nip" required placeholder="NIP/NUPTK">
-                            </div>
-                            <div class="mb-3">
-                                <label for="namaDirektur" class="form-label">Nama Direktur</label>
-                                <input type="text" class="form-control" id="namaDirektur" required
-                                    placeholder="Nama direktur">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="email" required placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="gambar" class="form-label d-block">Foto</label>
-                                <img src="{{ asset('/images/faces/face1.jpg') }}" alt="" class="mb-3 rounded  d-block">
-                                <input type="file" class="form-control" id="gambar" required placeholder="Gambar">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-sm">
-                                <span class="mdi mdi-content-save"></span> Simpan</button>
-                        </form>
-                    </div>
+    <!-- Modal Bootstrap untuk Edit Data -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Direktur</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="nip" class="form-label">NIP/NUPTK</label>
+                            <input type="number" class="form-control" id="nip" required placeholder="NIP/NUPTK">
+                        </div>
+                        <div class="mb-3">
+                            <label for="namaDirektur" class="form-label">Nama Direktur</label>
+                            <input type="text" class="form-control" id="namaDirektur" required
+                                placeholder="Nama direktur">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" required placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="gambar" class="form-label d-block">Foto</label>
+                            <img src="{{ asset('/images/faces/face1.jpg') }}" alt=""
+                                class="mb-3 rounded  d-block">
+                            <input type="file" class="form-control" id="gambar" required placeholder="Gambar">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            <span class="mdi mdi-content-save"></span> Simpan</button>
+                    </form>
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection
