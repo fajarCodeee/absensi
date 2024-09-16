@@ -61,13 +61,19 @@ Route::prefix('data-umum')->group(function () {
 Route::get("/jadwal-mengajar",function(){
     return view("pages.jadwal-mengajar.index");
 });
-Route::get("/jadwal-mengajar/create",function(){
-    return view("pages.jadwal-mengajar.tambah-jadwal");
+Route::get("/daftar-jadwal-mengajar",function(){
+    return view("pages.jadwal-mengajar.dosen");
 });
+
 
 Route::get("/data-direktur",function(){
     return view("pages.data-direktur.index");
 });
 Route::get("/data-dosen",function(){
     return view("pages.data-dosen.index");
+});
+
+
+Route::get("/presensi",function(){
+    return view('pages.presensi.index');
 });

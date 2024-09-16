@@ -42,6 +42,12 @@
                 <h1 class="welcome-text"><span class="text-black fw-bold">Data Direktur</span></h1>
                 @elseif(Request::is("data-dosen"))
                 <h1 class="welcome-text"><span class="text-black fw-bold">Data Dosen</span></h1>
+                @elseif(Request::is("presensi"))
+                <h1 class="welcome-text"><span class="text-black fw-bold">Presensi</span></h1>
+                @elseif(Request::is("presensi"))
+                <h1 class="welcome-text"><span class="text-black fw-bold">Presensi</span></h1>
+                @elseif(Request::is("daftar-jadwal-mengajar"))
+                <h1 class="welcome-text"><span class="text-black fw-bold">Jadwal Mengajar</span></h1>
                 @endif
             </li>
         </ul>

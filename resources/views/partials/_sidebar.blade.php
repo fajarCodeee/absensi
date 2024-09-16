@@ -75,5 +75,18 @@
                 </ul>
             </div>
         </li>
+        <li class="nav-item nav-category">Dosen</li>
+        <li class="nav-item">
+            <a class="nav-link" href="/daftar-jadwal-mengajar">
+                <i class="menu-icon mdi mdi-clipboard-clock-outline"></i>
+                <span class="menu-title fw-bolder">Jadwal Mengajar</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/presensi">
+                <i class="menu-icon mdi mdi-clipboard-check-outline"></i>
+                <span class="menu-title fw-bolder">Presensi</span>
+            </a>
+        </li>
     </ul>
 </nav>

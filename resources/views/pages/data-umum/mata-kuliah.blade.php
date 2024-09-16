@@ -96,8 +96,8 @@
                         <div class="mb-3">
                             <label for="semester" class="form-label">Semester</label>
                             <select class="form-control" id="semester">
-                                <option selected>--Semester--<x /option>
-                                <option>Semester 1<x /option>
+                                <option selected>--Semester--</option>
+                                <option>Semester 1</option>
                                 <option>Semester 3</option>
                                 <option>Semester 5</option>
                             </select>
@@ -105,8 +105,8 @@
                         <div class="mb-3">
                             <label for="sks" class="form-label">Gender</label>
                             <select class="form-control" id="sks">
-                                <option selected>--SKS--<x /option>
-                                <option>2<x /option>
+                                <option selected>--SKS--</option>
+                                <option>2</option>
                                 <option>3</option>
                             </select>
                         </div>
